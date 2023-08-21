@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Aranżacje Ogrodów - Najwyższa jakość materiałów i wykonania ✔ Sprawdź nasze realizacje i stwórz z nami swój wymarzony ogród">
+  <title>GiardDesign - Nowoczesna aranżacja Twojego ogrodu</title>
+</head>
+
+<body>
+
+  <!-- HEADER NAVI-BLOCK -->
+
+  <header class="fixed flex items-center top-0 left-0 right-0 z-20 bg-light1 h-[72px]">
+    <div class="w-full mx-auto px-[5vw] lg:px-[88px] flex justify-between items-center">
+      <a href="/">
+        <img src="images/giarddesign.png" alt="logo giarddesign" loading="lazy" class="h-[19px]">
+      </a>
+      <nav class="hidden lg:flex">
+        <ul class="flex gap-[48px]">
+          <li class="relative">
+            <button type="button" id="submenu-parent" aria-label="otwórz submenu" class="flex items-center gap-[5px]">
+              <span>
+                Oferta
+              </span>
+              <img src="icons/nav-arrow.svg" alt="arrow">
+            </button>
+            <div
+              class="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-light1 shadow-lg ring-1 ring-blackColor ring-opacity-5 focus:outline-none transition-all duration-500 z-10 invisible opacity-0 -translate-y-[15px]"
+              id="submenu" role="menu" aria-orientation="vertical" aria-label="submenu">
+              <div class="py-2">
+                <a href="#oferta" class="block px-4 py-2 text-sm" role="menuitem" id="menu-item-0">Oferta</a>
+              </div>
+              <hr>
+              <div class="py-2">
+                <a href="#" class="block px-4 py-2 text-sm" role="menuitem" id="menu-item-1">Projekty</a>
+                <a href="#" class="block px-4 py-2 text-sm" role="menuitem" id="menu-item-2">Wizualizacje</a>
+                <a href="#" class="block px-4 py-2 text-sm" role="menuitem" id="menu-item-2">Realizacje</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#o-firmie" aria-label="Informacje o firmie">
+              O firmie
+            </a>
+          </li>
+          <li>
+            <a href="#realizacje" aria-label="Nasze realizecje">
+              Realizacje
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="kontakt z nami">
+              Kontakt
+            </a>
+          </li>
+          <li>
+            <div class="flex gap-[48px]">
+              <form class="items-center bg-transparent hidden" id="search-form" autocomplete="off">
+                <input type="text" id="search-query" placeholder="Znajdź na stronie..."
+                  class="h-full w-[150px] outline-none font-montserrat">
+              </form>
+              <button type="submit" aria-label="wyszukaj" id="open-search-button">
+                <img src="icons/search-icon.svg" alt="lupa">
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="lg:hidden" id="open-btn" aria-label="otwórz niwigacje">
+        <img src="icons/list.svg" alt="list icon" class="w-[32px] h-[32px]">
+      </button>
+    </div>
+  </header>
+
+  <!-- SECTION 1 -->
+
+  <section class="container-fluid lg:h-[737px] bg-light3 mt-[72px]">
+    <div class="flex flex-col lg:grid lg:grid-cols-12 gap-[64px] h-full">
+      <div class="col-start-1 col-end-7 ml-[5vw] mr-[10vw] lg:mr-0 3xl:ml-[10vw] mt-[32px] lg:my-auto">
+        <h1 class="drop-shadow-heading1 text-[38px] md:text-[60px] font-medium mb-[44px] lg:leading-[70px]">Nowoczesna
+          <br />
+          aranżacja
+          <br />
+          Twojego ogrodu</h1>
+        <p class="mb-[72px] text-[16px] leading-normal">Marka GiardDesign to wieloletnie doświadczenie i wysoka
+          <br class="hidden lg:block" />
+          estetyka realizacji. Oferujemy kompleksowy zakres usług
+          <br class="hidden lg:block" />
+          z indywidualnym podejściem do każdego projektu.</p>
+        <div class="flex items-center gap-[36px] flex-wrap">
+          <a href="#" class="btn btn-green">
+            Skontaktuj się z nami
+          </a>
+          <a href="#realizacje" class="btn btn-transparent-green group">
+            <span>
+              Zobacz nasze realizacje
+            </span>
+            <img src="icons/arrow.svg" alt="arrow" class="group-hover:animate-sweepY group-focus:animate-sweepY">
+          </a>
+        </div>
+      </div>
+      <div class="col-start-7 col-end-13 h-[450px] lg:h-full my-auto text-light2 relative">
+        <div id="photos" class="object-cover w-full h-full max-h-[737px] bg-slate-400 relative">
+          <div class="block block-1 active">
+            <picture class="slide">
+              <source srcset="images/photo.avif" type="image/avif">
+              <source srcset="images/photo.webp" type="image/webp">
+              <img src="images/photo.jpg" alt="hero - garden 1" class="object-cover w-full h-full max-h-[737px]">
+            </picture>
+          </div>
+          <div class="block block-2">
+            <picture class="slide">
+              <source srcset="images/photo2.avif" type="image/avif">
+              <source srcset="images/photo2.webp" type="image/webp">
+              <img src="images/photo2.jpg" alt="hero - garden 2" class="object-cover w-full h-full max-h-[737px]">
+            </picture>
+          </div>
+          <div class="block block-3">
+            <picture class="slide">
+              <source srcset="images/garden2.avif" type="image/avif">
+              <source srcset="images/garden2.webp" type="image/webp">
+              <img src="images/garden2.jpg" alt="hero - garden 3" class="object-cover w-full h-full max-h-[737px]">
+            </picture>
+          </div>
+        </div>
+        <div class="absolute bottom-0 right-0 bg-light2 w-[192px] h-[96px] px-[32px] py-[24px] flex gap-[32px]">
+          <button type="button" class="slider-prev">
+            <img src="icons/banner-arrow-left.svg" alt="icon left arrow">
+          </button>
+          <button type="button" class="slider-next">
+            <img src="icons/banner-arrow-right.svg" alt="icon right arrow">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 - OFERTA-BLOCK -->
+
+  <section class="container-fluid bg-light2 pt-[60px] lg:pt-[120px] pb-[80px] lg:pb-[160px]" id="oferta">
+    <div class="grid grid-cols-12">
+      <div class="grid col-start-2 col-end-12 lg:col-end-9 h-full">
+        <div class="col-start-2 col-span-7 flex flex-col gap-[16px] mb-[48px] lg:mb-[96px]">
+          <small class="text-greenColor text-[12px] -tracking-spacing1">Oferta</small>
+          <div class="flex flex-col gap-[32px]">
+            <h2>
+              <span class="-tracking-spacing3 font-montserrat font-medium">Działamy</span>
+              <span class="italic">kompleksowo</span>
+            </h2>
+            <p class="-tracking-spacing1">Oferujemy kompletną obsługę inwestycji terenów
+              zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+              Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy
+              <!-- <br> -->
+              w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARDS -->
+
+      <div
+        class="col-start-2 col-end-12 lg:col-start-1 lg:col-end-13 grid md:grid-cols-2 xl:grid-cols-3 gap-[64px] max-w-[1440px] mx-auto">
+        <a href="#" class="card group">
+          <div class="mb-auto">
+            <img src="icons/projects-icon.svg" alt="Projekty" class="mb-[32px]">
+            <div>
+              <h3>Projekty</h3>
+              <p class="text-[14px] -tracking-spacing1">Zaprojektujemy Twój ogród w
+                nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
+              </p>
+            </div>
+          </div>
+          <span class="card-btn">
+            <span>Dowiedz się więcej</span>
+            <img src="icons/arrow4.svg" alt="arrow" class="group-hover:animate-sweepX group-focus:animate-sweepX">
+          </span>
+        </a>
+        <a href="#" class="card group">
+          <div class="mb-auto">
+            <img src="icons/visualizations-icon.svg" alt="Wizualizacje" class="mb-[32px]">
+            <div>
+              <h3>Wizualizacje</h3>
+              <p class="text-[14px] -tracking-[0.01em]">Przedstawimy Ci projekty koncepcyjne
+                <br>
+                w postaci wirtualnego spaceru animowanego w technologii 3D.
+              </p>
+            </div>
+          </div>
+          <span class="card-btn">
+            <span>Dowiedz się więcej</span>
+            <img src="icons/arrow4.svg" alt="arrow" class="group-hover:animate-sweepX group-focus:animate-sweepX">
+          </span>
+        </a>
+        <a href="#" class="card group">
+          <div class="mb-auto">
+            <img src="icons/realizations-icon.svg" alt="Realizacje" class="mb-[32px]">
+            <div>
+              <h3>Realizacje</h3>
+              <p class="text-[14px] -tracking-spacing1">Zrealizujemy Twoje marzenie przy
+                użyciu najnowszych rozwiązań i zaawansowanych technologii.
+              </p>
+            </div>
+          </div>
+          <span class="card-btn">
+            <span>Dowiedz się więcej</span>
+            <img src="icons/arrow4.svg" alt="arrow" class="group-hover:animate-sweepX group-focus:animate-sweepX">
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 - O FIRMIE-BOCK -->
+
+  <section class="container-fluid bg-greenColor" id="o-firmie">
+    <div class="flex flex-col lg:grid lg:grid-cols-12 gap-[64px]">
+      <div class="col-start-1 col-end-7 w-full h-[450px] lg:h-[720px]">
+        <picture>
+          <source srcset="images/photo2.avif" type="image/avif">
+          <source srcset="images/photo2.webp" type="image/webp">
+          <img src="images/photo2.jpg" alt="o firmie" class="w-full h-full object-cover">
+        </picture>
+      </div>
+      <div class="col-start-7 col-end-13 xl:ml-[96px] mr-[44px] lg:mr-[88px] my-auto text-light2">
+        <div class="col-start-2 col-span-7 flex flex-col mb-[64px] lg:mb-0 pl-[48px] lg:pl-0">
+          <small class="text-[12px] -tracking-spacing1 mb-[16px]">O firmie</small>
+          <div class="flex flex-col gap-[40px] mb-[72px]">
+            <h2 class="leading-[1.15]">
+              <span class="-tracking-spacing3 font-montserrat">Tworzymy
+                <br>
+                z</span>
+              <span class="italic">pasją</span>
+            </h2>
+            <p class="-tracking-spacing1">Każdy projekt to nowe wyzwanie. Dlatego nasz
+              zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest
+              rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to
+              przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka
+              prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu
+              życia.</p>
+          </div>
+          <a href="#" class="btn btn-light1 flex items-center gap-2 group">
+            <span class="overflow-hidden">
+              Poznaj nas bliżej
+            </span>
+            <img src="icons/arrow2.svg" alt="arrow" class="group-hover:animate-sweepX group-focus:animate-sweepX">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 - REALIZACJE-BLOCK -->
+
+  <section class="container-fluid pt-[120px] pb-[44px] bg-light3" id="realizacje">
+    <div class=" pl-[48px] xl:pl-[160px] flex flex-col gap-[16px] mb-[96px]">
+      <small>Realizacje</small>
+      <h2 class="-tracking-spacing3">Nasze
+        <span class="italic tracking-normal">projekty</span>
+      </h2>
+    </div>
+    <!-- GALLERY -->
+    <div class="gallery-box">
+      <ul class="w-full columns-1 sm:columns-2 lg:columns-3 3xl:columns-4 gap:4 lg:gap-10" id="gallery">
+        <li class="thumbnail"><img src="images/gallery/Photo.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-1.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-2.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-3.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-4.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-5.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-6.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-7.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-8.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <!-- 2x reverse -->
+        <li class="thumbnail"><img src="images/gallery/Photo-8.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-7.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-6.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-5.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-4.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-3.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-2.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo-1.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+        <li class="thumbnail"><img src="images/gallery/Photo.jpg" class="w-full" tabindex="0"
+            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
+      </ul>
+      <button type="button" id="show-more-btn"
+        class="btn btn-transparent-black absolute left-1/2 bottom-[44px] -translate-x-1/2 group z-10">
+        Rozwiń
+        <img src="icons/arrow3.svg" alt="arrow down" class="group-hover:animate-bounce group-focus:animate-bounce">
+      </button>
+    </div>
+  </section>
+
+  <!-- SECTION 5 - INSTAGRAM-BLOCK -->
+
+  <section class="container-fluid py-[30px] xl:py-[60px] bg-light2">
+    <div class="custom-grid">
+      <div
+        class="col-start-2 col-end-12 flex items-center flex-wrap gap-[64px] w-full max-w-[1040px] mx-auto min-h-[358px] bg-greenColor px-[32px] xl:px-[110px] py-[60px] xl:py-[120px] text-light2">
+        <div class="xl:self-end">
+          <p class="font-montserrat text-[32px] lg:text-[40px] -tracking-[2px] leading-[1.2]">Zostańmy w kontakcie!
+            <br>
+            Znajdziesz nas na
+            <span class="font-inter font-medium italic -tracking-[1px]">Instagramie</span>.
+          </p>
+        </div>
+        <div class="flex flex-col gap-[24px]">
+          <p class="-tracking-spacing1">Śledź nasze
+            <br>
+            najnowsze realizacje!</p>
+          <a class="btn btn-light-green" href="https://www.instagram.com/" target="_blank"
+            rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="container-fluid bg-blackColor py-[80px] text-light2">
+    <div class="custom-grid">
+      <div class="col-start-2 col-end-12 flex flex-col gap-[120px]">
+        <div class="flex flex-col gap-[62px]">
+          <div class="flex items-center justify-between gap-[64px] flex-wrap">
+            <a href="/">
+              <img src="images/giarddesignWhite.png" alt="logo">
+            </a>
+            <div class="flex flex-wrap items-center gap-[24px]">
+              <p class="-tracking-spacing1 inline-block">Daj znać, co możemy dla Ciebie zrobić!</p>
+              <a href="#" class="btn btn-green">Skontaktuj się z nami</a>
+            </div>
+          </div>
+          <hr color="bg-light1">
+          <div class="flex items-center justify-between gap-[64px] flex-wrap">
+            <ul class="flex gap-[48px] flex-wrap">
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">Kontakt</a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">Linkedin</a>
+              </li>
+            </ul>
+            <ul class="flex items-center gap-[48px] flex-wrap">
+              <li>
+                <a href="tel:+000-000-000">000-000-000</a>
+              </li>
+              <li>
+                <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-[48px] flex-wrap">
+          <span class="-tracking-spacing1">Prawa zastrzeżone &#169;
+            <span id="currentYear"></span>
+          </span>
+          <div class="flex items-center gap-[16px] flex-wrap">
+            <span class="inline-block">made by</span>
+            <a href="https://adrespect.pl/" target="_blank" rel="noopener noreferrer">
+              <img src="images/adRespectLogo.png" alt="adRespect logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ASIDE -->
+
+  <aside class="invisible -translate-x-full opacity-0 z-20">
+    <div class="flex items-center justify-between h-[72px]">
+      <a href="/">
+        <img src="images/giarddesign.png" alt="logo giarddesign" loading="lazy" class="h-[19px]">
+      </a>
+      <button class="text-3xl" id="close-btn">
+        <img src="icons/x-lg.svg" alt="x-lg icon" class="w-[32px] h-[32px]">
+      </button>
+    </div>
+    <div>
+      <ul class="flex flex-col gap-[32px]">
+        <li>
+          <a href="#" aria-label="Oferta">
+            <span>
+              Oferta
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Informacje o firmie">
+            O firmie
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Nasze realizecje">
+            Realizacje
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="kontakt z nami">
+            Kontakt
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- GALLERY POPUP  -->
+
+  <div class="popup hidden">
+    <button class="popup-close" aria-label="zamknij popup">
+      <img src="icons/x-lg.svg" alt="x-lg icon" class="w-[48px] h-[48px]">
+    </button>
+    <button class="popup-arrow-left" aria-label="poprzednie zdjęcie">
+      <img src="icons/arrow-left.svg" alt="arrow left icon" class="w-[48px] h-[48px]">
+    </button>
+    <button class="popup-arrow-right" aria-label="następne zdjęcie">
+      <img src="icons/arrow-right.svg" alt="arrow left icon" class="w-[48px] h-[48px]">
+    </button>
+    <img src="" class="popup-img" alt="">
+  </div>
+
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/slider.js"></script>
+  <script type="module" src="/gallery.js"></script>
+</body>
+
+</html>

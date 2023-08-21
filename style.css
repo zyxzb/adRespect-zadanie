@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::before,
+::after,
+* {
+  @apply m-0 p-0 box-border font-inter;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-light1 overflow-x-hidden;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-montserrat;
+}
+
+h2 {
+  @apply text-[32px] font-medium lg:text-[48px];
+}
+
+h3 {
+  @apply mb-[12px] text-[24px] lg:text-[28px] font-medium -tracking-spacing5;
+}
+
+aside {
+  @apply fixed top-0 right-0 bottom-0 left-0 px-[5vw] bg-light1 flex flex-col gap-10 transition-all;
+}
+
+a:not(.btn, .card) {
+  @apply underline-offset-4 hover:underline;
+}
+
+.custom-grid {
+  @apply grid grid-cols-12 xl:gap-[64px] xl:mx-[88px];
+}
+
+.container {
+  @apply w-full max-w-[1440px] mx-auto;
+}
+
+.container-fluid {
+  @apply w-full mx-auto;
+}
+
+.padding {
+  @apply px-[88px];
+}
+
+.card {
+  @apply bg-light1 w-full max-w-[378px] min-w-[290px] h-[370px] rounded-[28px] py-[48px] px-[40px] flex flex-col transition-shadow cursor-pointer hover:shadow-xl;
+}
+
+.card-btn {
+  @apply self-start mt-auto text-greenColor font-medium flex items-center gap-[10px] pb-[4px] border-b border-greenColor;
+}
+
+.thumbnail {
+  @apply inline-block w-full mb-2 lg:mb-10 hover:cursor-zoom-in hover:scale-[1.02] transition-all;
+}
+
+/* BUTTONS */
+
+.btn {
+  @apply border-[1px] max-w-max px-[24px] py-[12px] flex items-center justify-center gap-2 rounded-[200px] transition-colors overflow-hidden;
+}
+
+.btn-green {
+  @apply bg-greenColor text-light1 border-blackColor active:bg-greenColor/80 hover:bg-greenColor/80;
+}
+
+.btn-light1 {
+  @apply bg-transparent text-light1 border-light1;
+}
+
+.btn-light-green {
+  @apply bg-light2 text-greenColor border-greenColor hover:bg-light2/80 focus:bg-light2/80;
+}
+
+.btn-transparent-green {
+  @apply bg-transparent text-greenColor border-greenColor;
+}
+
+.btn-transparent-black {
+  @apply bg-transparent text-blackColor border-blackColor;
+}
+
+/* POPUP - GALLERY */
+
+.popup {
+  @apply fixed inset-0 bg-light3/70 z-30 backdrop-blur-md;
+}
+
+.popup-img {
+  @apply w-[80%] lg:w-[75%] h-[70%] object-contain absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2;
+}
+
+.popup-close {
+  @apply absolute right-[5%] top-[5%];
+}
+
+.popup-arrow-left,
+.popup-arrow-right {
+  @apply absolute bottom-[5%] lg:top-[50%] -translate-y-1/2;
+}
+
+.popup-arrow-left {
+  @apply left-[5%];
+}
+
+.popup-arrow-right {
+  @apply right-[5%];
+}
+
+.gallery-box {
+  @apply relative after:content-[''] after:absolute after:bottom-0 after:w-full after:h-[1000px] after:bg-gradient-to-b after:from-transparent after:to-[#DCC1AB] after:pointer-events-none;
+}
+
+/* SLIDER */
+
+#photos .block {
+  @apply h-full w-full absolute left-0 opacity-0 transition-opacity duration-1000;
+}
+
+#photos .block.active {
+  @apply opacity-100;
+}
