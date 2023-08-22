@@ -65,7 +65,7 @@ a:not(.btn, .card) {
 }
 
 .thumbnail {
-  @apply inline-block w-full mb-2 lg:mb-10 hover:cursor-zoom-in hover:scale-[1.02] transition-all;
+  @apply hover:cursor-zoom-in hover:opacity-80 transition-opacity;
 }
 
 /* BUTTONS */

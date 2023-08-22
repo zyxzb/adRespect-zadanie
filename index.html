@@ -269,7 +269,9 @@
     </div>
     <!-- GALLERY -->
     <div class="gallery-box">
-      <ul class="w-full columns-1 sm:columns-2 lg:columns-3 3xl:columns-4 gap:4 lg:gap-10" id="gallery">
+      <ul id="gallery">
+        <!-- Tailwind grid  -->
+        <!-- class="w-full columns-1 sm:columns-2 lg:columns-3 3xl:columns-4 gap:4 lg:gap-10" -->
         <li class="thumbnail"><img src="images/gallery/Photo.jpg" class="w-full" tabindex="0"
             alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
         <li class="thumbnail"><img src="images/gallery/Photo-1.jpg" class="w-full" tabindex="0"
@@ -287,25 +289,6 @@
         <li class="thumbnail"><img src="images/gallery/Photo-7.jpg" class="w-full" tabindex="0"
             alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
         <li class="thumbnail"><img src="images/gallery/Photo-8.jpg" class="w-full" tabindex="0"
-            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
-        <!-- 2x reverse -->
-        <li class="thumbnail"><img src="images/gallery/Photo-8.jpg" class="w-full" tabindex="0"
-            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
-        <li class="thumbnail"><img src="images/gallery/Photo-7.jpg" class="w-full" tabindex="0"
-            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
-        <li class="thumbnail"><img src="images/gallery/Photo-6.jpg" class="w-full" tabindex="0"
-            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
-        <li class="thumbnail"><img src="images/gallery/Photo-5.jpg" class="w-full" tabindex="0"
-            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
-        <li class="thumbnail"><img src="images/gallery/Photo-4.jpg" class="w-full" tabindex="0"
-            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
-        <li class="thumbnail"><img src="images/gallery/Photo-3.jpg" class="w-full" tabindex="0"
-            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
-        <li class="thumbnail"><img src="images/gallery/Photo-2.jpg" class="w-full" tabindex="0"
-            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
-        <li class="thumbnail"><img src="images/gallery/Photo-1.jpg" class="w-full" tabindex="0"
-            alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
-        <li class="thumbnail"><img src="images/gallery/Photo.jpg" class="w-full" tabindex="0"
             alt="Lorem ipsum dolor sit amet." loading="lazy"></li>
       </ul>
       <button type="button" id="show-more-btn"
@@ -450,8 +433,17 @@
     <img src="" class="popup-img" alt="">
   </div>
 
+  <div id="loader"
+    class="fixed inset-0 bg-light1 z-10 flex justify-center items-center invisible opacity-0 transition-opacity duration-100">
+    <div
+      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+      role="status">
+    </div>
+  </div>
+
   <script type="module" src="/main.js"></script>
   <script type="module" src="/slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   <script type="module" src="/gallery.js"></script>
 </body>
 
